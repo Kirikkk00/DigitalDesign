@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Магазин товаров</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>Магазин товаров</h1>
+      <button id="theme-toggle">Тема</button>
+      <div class="all-category">
+        <span>Категории:</span>
+        <nav>
+          <ul>
+            <div class="categories">
+              <li><a href="#category1">Процессоры</a></li>
+            </div>
+            <div class="categories">
+              <li><a href="#category2">Видеокарты</a></li>
+            </div>
+            <div class="categories">
+              <li><a href="#category3">Материнские платы</a></li>
+            </div>
+          </ul>
+      </div>
+      
+    </div>
+  </header>
+
+
+
+  <button id="scroll-to-top">Наверх</button>
+  <!-- Форма -->
+  <div class="purchase-form-overlay">
+     <form class="purchase-form fade-in" action="index.html">
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" required>
+      
+        <label>Цвет покупного пакета:</label>
+        <div class="radio-buttons">
+          <div class="radio-button">
+            <input type="radio" id="color-red" name="color" value="red" required>
+            <label for="color-red">Красный</label>
+          </div>
+        
+          <div class="radio-button">
+            <input type="radio" id="color-green" name="color" value="green" required>
+            <label for="color-green">Зелёный</label>
+          </div>
+        
+          <div class="radio-button">
+            <input type="radio" id="color-blue" name="color" value="blue" required>
+            <label for="color-blue">Голубой</label>
+          </div>
+        </div>
+        
+   
+        <label for="comment">Коментарий:</label>
+        <textarea id="comment" maxlength="2000"></textarea>
+      
+        <button type="submit" id="buy-button-form">Купить</button>
+        <button type="button" id="close-button-form">Закрыть</button>
+     </form>
+  </div>
+
+  <section id="categories">
+    <div class="category" id="category1">
+      <h2>Процессоры</h2>
+      <div class="container-cards">
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/i5_12400f.jpg" alt="i3_12400f">
+          </div>
+          <p>Intel core i5 12400f</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/ryzen9_7900x.jpg" alt="ryzen9_7900x">
+          </div>
+          <p>AMD ryzen 9 7900x</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/ryzen5_2600x.jpg" alt="ryzen5_2600x">
+          </div>
+          <p>AMD ryzen 5 2600x</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/ryzen7_7600x.jpg" alt="ryzen7_7600x">
+          </div>
+          <p>AMD ryzen 7 7600x</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/i3_10100f.jpg" alt="i3_10100f">
+          </div>
+          <p>Intel core i3 10100f</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/celeron_g5925.jpg" alt="celeron_g5925">
+          </div>
+          <p>Intel celeron G5925</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/i3-9100f.jpg" alt="i3-9100f">
+          </div>
+          <p>Intel core i3 9100f</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/athlon_64x2.jpg" alt="athlon_64x2">
+          </div>
+          <p>AMD athlon 64 x2</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/athlon_300ge.jpg" alt="athlon_300ge">
+          </div>
+          <p>AMD athlon 300GE</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/i7_9700f.jpg" alt="i7_9700f">
+          </div>
+          <p>Intel core i7 9700f</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/cpu_pic/fx_8300.jpg" alt="fx_8300">
+          </div>
+          <p>AMD fx 8300</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <!-- Добавление карточек товаров -->
+      </div>
+
+    </div>
+
+    <div class="category" id="category2">
+      <h2>Видеокарты</h2>
+      <div class="container-cards">
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/gtx_1630.jpg" alt="gt_1630">
+          </div>
+          <p>Nvidia GT 1630</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+        
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rx_6400.jpg" alt="rx_6400">
+          </div>
+          <p>AMD rx6400</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/gt_610.jpg" alt="gt_610">
+          </div>
+          <p>Nvidia gt 610</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rx_6600xt.jpg" alt="rx_6600xt">
+          </div>
+          <p>AMD rx6600 xt</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rx_7600.jpg" alt="rx_7600">
+          </div>
+          <p>AMD rx7600</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rtx_3070.jpg" alt="rtx_3070">
+          </div>
+          <p>Nvidia rtx 3070</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rtx_2060super.jpg" alt="rtx_2060super">
+          </div>
+          <p>Nvidia rtx 2060 super</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/rtx_3060ti.jpg" alt="rtx_3060ti">
+          </div>
+          <p>Nvidia rtx 3060ti</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/r9_370x.jpg" alt="r9_370x">
+          </div>
+          <p>AMD r9 370x</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/gpu_pic/radeon_hd6670.jpg" alt="radeon_hd6670">
+          </div>
+          <p>AMD radeod hd6670</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+  
+        <!-- Добавление карточек товаров -->
+
+      </div>
+     
+    </div>
+
+    <div class="category" id="category3">
+      <h2>Материнские платы</h2>
+      <div class="container-cards">
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/msi_p67a_gd65.jpg" alt="msi_p67a_gd65">
+          </div>
+          <p>MSI p67a gd65</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/gigabyte_gaz97x.jpg" alt="gigabyte_gaz97x">
+          </div>
+          <p>Gigabyte gaz97x</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/ecs_z87h3ax.jpg" alt="ecs_z87h3ax">
+          </div>
+          <p>ECS z87h3ax</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/gigMW51.jpg" alt="gigMW51">
+          </div>
+          <p>Gigabyte MW51</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/Gigabyte_ga-ph67.jpg" alt="Gigabyte_ga-ph67">
+          </div>
+          <p>Gigabyte ga-ph67</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/msi_m5a78i.jpg" alt="msi_m5a78i">
+          </div>
+          <p>MSI m5a78i</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/msi_z77a-g45.jpg" alt="msi_z77a-g45">
+          </div>
+          <p>MSI z77a-g45</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/Gigabyte_lga1155.jpg" alt="Gigabyte_lga1155">
+          </div>
+          <p>Gigabyte lga1155</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/VIA_epia_mini-ITX.jpg" alt="VIA_epia_mini-ITX">
+          </div>
+          <p>VIA epia mini-ITX</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/Gigabyte_a75m.jpg" alt="Gigabyte_a75m">
+          </div>
+          <p>Gigabyte a75m</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/EVGA_lga2011.jpg" alt="EVGA_lga2011">
+          </div>
+          <p>EVGA lga2011</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+
+
+        <div class="product-card">
+          <div class="img">
+            <img src="img/motherboard_pic/Asus_e2km1e.jpg" alt="Asus_e2km1e">
+          </div>
+          <p>Asus e2km1e</p>
+          <p class="date">Добавлено: <span class="formatted-date"></span></p>
+          <button class="buy-button">Купить</button>
+        </div>
+  
+        <!-- Добавление карточек товаров -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <ul class="ul">
+      <li><a href="#category1">Процессоры</a></li>
+      <li><a href="#category2">Видеокарты</a></li>
+      <li><a href="#category3">Материнские платы</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
